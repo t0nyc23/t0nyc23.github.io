@@ -12,6 +12,7 @@ enableEmoji = true
 ignoreErrors = ["additional-script-loading-error"] # ignore error of loading additional scripts.
 
 theme = "hugo-blog-awesome"
+#theme = "hugo-dusk"
 
 [services]
 # To enable Google Analytics 4 (gtag.js) provide G-MEASUREMENT_ID below.
@@ -109,4 +110,3 @@ theme = "hugo-blog-awesome"
 #[[params.socialIcons]]
 #name = "Rss"
 #url = "/index.xml"
-
