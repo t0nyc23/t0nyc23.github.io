@@ -136,16 +136,16 @@ If at any point a function fails, `InjectShellcode` returns `FALSE`, otherwise i
 
 A simple `windows/x64/messagebox` payload from `msfvenom` will be used for the demo. When running the our executable, we see the messagebox pop up
 
-![](/attachements/gif1212312312312312.gif)
+![](/attachments/proc-enum-inject/gif1212312312312312.gif)
 
 We also see the PID `4668` of the process where the shellcode was injected. We can check that PID on System Informer and see that the process is `sihost.exe`
 
-![](/attachements/Pasted%20image%2020241126070640.png)
+![](/attachments/proc-enum-inject/Pasted%20image%2020241126070640.png)
 
 
 When inspecting the memory of `sihost.exe` at the address `0x0000022D34320000` which we got from the output of our malware, we can see the `msfvenom` message box payload.
 
-![](/attachements/Pasted%20image%2020241126071137.png)
+![](/attachments/proc-enum-inject/Pasted%20image%2020241126071137.png)
 
 
 ## Remote Process Enumeration and Injection - Full Code
