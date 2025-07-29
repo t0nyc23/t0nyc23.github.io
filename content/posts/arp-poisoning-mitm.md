@@ -45,7 +45,7 @@ for _, received in answered:
 	print(f"Host: {received.psrc} is-at {received.hwsrc}")
 ```
 
-- A Python script that wrapps around the above snippet can be found [here](https://github.com/t0nyc23/arpt00ls/arpscann3r.py)
+- A Python script that wrapps around the above snippet can be found [here](https://github.com/t0nyc23/arpt00ls/blob/main/arpscann3r.py)
 
 The following figure shows an `ARP Ping Scan` in action:
 
@@ -79,7 +79,7 @@ gateway_packet = ARP(op=2, hwsrc=attacker_mac, psrc=target_ip,
 sendp(Ether(dst=gateway_mac)/gateway_packet)
 ```
 
-- A Python script that wrapps around the above snippet can be found [here](https://github.com/t0nyc23/arpt00ls/arp0isonr.py)
+- A Python script that wrapps around the above snippet can be found [here](https://github.com/t0nyc23/arpt00ls/blob/main/arp0isonr.py)
 
 The `op=2` argument for the `ARP()` function, used to craft the packets, corresponds to `opcode 2`, which indicates an `is-at` reply. When placed in a function and executed continuously, the above code positions the attacker in the middle of the conversation between a router and a target machine.
 
